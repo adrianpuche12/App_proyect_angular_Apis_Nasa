@@ -9,7 +9,7 @@ type Fruit = Array<{ id: number; name: string }>;
 export class HomeComponent implements OnInit {
 
   public cardContent: Array<any> = [
-    { title: "APOD", description: "Astronomy Picture of the Day" },
+    { title: "APOD", description: "Astronomy Picture of the Day", url: "/apod-component" },
     { title: "Asteroids NeoWs", description: "Near Earth Object Web Service" },
     { title: "DONKI", description: "Space Weather Database Of Notifications, Knowledge, Information" },
     { title: "Earth", description: "Unlock the significant public investment in earth observation data" },
