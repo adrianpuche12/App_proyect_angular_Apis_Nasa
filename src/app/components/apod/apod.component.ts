@@ -8,19 +8,20 @@ import { ApodService } from 'src/app/services/apod.service';
   styleUrls: ['./apod.component.css']
 })
 
-
 export class ApodComponent implements OnInit {
 
-  apodList: any = [];
   constructor(private apodServices: ApodService) {
     console.log("El componente Apod se ha creado");
   }
 
-  ngOnInit(): void {
+  datos: any;
+  ngOnInit() {
     console.log('El componente Apod se ha inicializado.');
 
-    //this.apodServices.getApod().subscribe((response: any) => this.apodList = response);
-    //console.log(this.apodList);
-  }
+    this.apodServices.getApod().subscribe((data: any) => {
+      this.datos = data;
 
+      console.log(this.datos = data);
+    })
+  }
 }
