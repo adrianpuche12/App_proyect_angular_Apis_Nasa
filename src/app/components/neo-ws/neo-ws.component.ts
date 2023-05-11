@@ -19,6 +19,7 @@ export class NeoWsComponent implements OnInit {
       this.datos = data;
 
       console.log(this.datos = data);
+  
     })
   }
 }

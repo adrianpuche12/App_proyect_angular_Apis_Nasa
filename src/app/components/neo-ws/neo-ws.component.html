@@ -1,10 +1,21 @@
-<!--  <div *ngFor="let objet_nasa of datos"></div>
 
-<p>absolute magnitude h: {{datos.near_earth_objects[0].absolute_magnitude_h.name}}</p>
+<div class="container-fluid mt-5 mx-1 text-center">
+    <div class="row">
 
- <p *ngFor="let nombre_object of absolute_magnitude_h"></p>
--->
-
-<ul *ngFor="let objet_nasa of datos">
-    <li>Name of Asteroid: {{datos.near_earth_objects[0].absolute_magnitude_h.name}}, Id: {{datos.near_earth_objects[0].absolute_magnitude_h.id}} </li>
-</ul>
+        <div class="card-body" *ngFor="let objet_nasa of datos.near_earth_objects" class="card mx-3 my-3 p-0"
+            style="width: 18rem;">
+            <div class="col">
+                <div class="card text-center h-100">
+                    <h5 class="card-header">Name of Asteroid: {{objet_nasa.name}}</h5>
+                    <div class="card-body">
+                        <p class="card-text">Estimated Diameter in kilometers</p>
+                    </div>
+                    <ul>
+                        <li>Diameter Max: {{objet_nasa.estimated_diameter.kilometers.estimated_diameter_max}}</li>
+                        <li>Diameter Min: {{objet_nasa.estimated_diameter.kilometers.estimated_diameter_min}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
