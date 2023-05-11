@@ -1,1 +1,10 @@
-<p>neo-ws works!</p>
+<!--  <div *ngFor="let objet_nasa of datos"></div>
+
+<p>absolute magnitude h: {{datos.near_earth_objects[0].absolute_magnitude_h.name}}</p>
+
+ <p *ngFor="let nombre_object of absolute_magnitude_h"></p>
+-->
+
+<ul *ngFor="let objet_nasa of datos">
+    <li>Name of Asteroid: {{datos.near_earth_objects[0].absolute_magnitude_h.name}}, Id: {{datos.near_earth_objects[0].absolute_magnitude_h.id}} </li>
+</ul>

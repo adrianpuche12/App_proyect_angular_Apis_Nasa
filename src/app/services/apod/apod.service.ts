@@ -12,6 +12,5 @@ export class ApodService {
 
   getApod(): any {
     return this.http.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY');
-    //return this.http.get('https://reqres.in/api/users?page=2');
   }
 }
