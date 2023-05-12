@@ -24,6 +24,7 @@ import { SsdComponent } from './components/ssd/ssd.component';
 import { TechportComponent } from './components/techport/techport.component';
 import { TleApiComponent } from './components/tle-api/tle-api.component';
 import { VestaComponent } from './components/vesta/vesta.component';
+import { ButtomCardComponent } from './components/accessories/buttom-card/buttom-card.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { VestaComponent } from './components/vesta/vesta.component';
     SsdComponent,
     TechportComponent,
     TleApiComponent,
-    VestaComponent
+    VestaComponent,
+    ButtomCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Directive, OnInit } from '@angular/core';
 import { NeowsService } from 'src/app/services/neows/neows.service';
+import { ButtomCardComponent } from '../accessories/buttom-card/buttom-card.component';
 
 @Component({
   selector: 'app-neo-ws',
