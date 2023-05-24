@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApodService } from 'src/app/services/apod/apod.service';
+import { Form } from '@angular/forms';
 
 
 @Component({
