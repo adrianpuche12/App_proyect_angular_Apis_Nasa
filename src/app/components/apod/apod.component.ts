@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ApodService } from 'src/app/services/apod/apod.service';
-import { Form } from '@angular/forms';
 
 
 @Component({
@@ -11,12 +10,17 @@ import { Form } from '@angular/forms';
 
 export class ApodComponent implements OnInit {
 
+
   constructor(private apodServices: ApodService) {
     console.log("El componente Apod se ha creado");
   }
 
   datos: any;
+
   ngOnInit() {
+
+  
+
     console.log('El componente Apod se ha inicializado.');
 
     this.apodServices.getApod().subscribe((data: any) => {
