@@ -16,10 +16,7 @@ export class ApodComponent implements OnInit {
   }
 
   datos: any;
-
   ngOnInit() {
-
-  
 
     console.log('El componente Apod se ha inicializado.');
 

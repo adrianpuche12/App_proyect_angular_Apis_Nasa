@@ -1,26 +1,42 @@
-<div class="container-fluid mt-5 mx-1 text-center">
-    <div class="row">
+<div class="body">
+    <div class="container-fluid mt-5 mx-1 text-center">
+        <div class="row d-flex justify-content-between">
 
-        <div class="card-body" *ngFor="let objet_nasa of datos.near_earth_objects" class="card mx-3 my-3 p-0"
-            style="width: 18rem;">
-            <div class="col">
-                <div class="card text-center h-100">
-                    <h5 class="card-header">Name of Asteroid: {{objet_nasa.name}}</h5>
-                    <!--  
-                    <div class="card-body">
-                        <p class="card-text">Estimated Diameter in kilometers</p>
+            <h1 class="text-white title">Near Earth Object Web Service</h1>
+
+            <p class="text-white description">NeoWs (Near Earth Object Web Service) es un servicio web RESTful para información
+                sobre asteroides cercanos a la Tierra. Con NeoWs, un usuario puede: buscar asteroides en función de su
+                fecha de acercamiento más cercano a la Tierra, buscar un asteroide específico con su identificación de
+                cuerpo pequeño JPL de la NASA, así como explorar el conjunto de datos general.</p>
+
+            <div class="card-body" *ngFor="let objet_nasa of datos.near_earth_objects" class="card mx-3 my-3 p-0"
+                style="width: 18rem;">
+                <div class="col">
+                    <div class="card bg-dark text-white text-center h-100">
+                        <h5 class="card-header">Name of Asteroid: {{objet_nasa.name}}</h5>
+
+                        <p>Estimated diameter min in kilometers:
+                            {{objet_nasa.estimated_diameter.kilometers.estimated_diameter_min}}</p>
+                        <p>Estimated diameter max in kilometers:
+                            {{objet_nasa.estimated_diameter.kilometers.estimated_diameter_max}}</p>
+
+                        <div class="card-body">
+                            <h5>Orbital data</h5>
+
+                            <ul class="text">
+                                <li>Orbit_id: {{objet_nasa.orbital_data.orbit_id}}</li>
+                                <li>Orbit determination date:{{objet_nasa.orbital_data.orbit_determination_date}}</li>
+                                <li>First observation date:{{objet_nasa.orbital_data.first_observation_date}}</li>
+                                <li>last_observation_date: {{objet_nasa.orbital_data.last_observation_date}}</li>
+                            </ul>
+                        </div>
                     </div>
-                  
-                    <ul>
-                        <li>Diameter Max: {{objet_nasa.estimated_diameter.kilometers.estimated_diameter_max}}</li>
-                        <li>Diameter Min: {{objet_nasa.estimated_diameter.kilometers.estimated_diameter_min}}</li>
-                    </ul>
- -->
+
                 </div>
-            </div>
-            <div class="my-4">
-                <a href="https://getbootstrap.com/docs/4.0/components/buttons/"><button class="btn btn-primary"
-                        type="submit">See More</button></a>
+                <div class="my-4 ">
+                    <a href="https://getbootstrap.com/docs/4.0/components/buttons/"><button class="btn btn-primary"
+                            type="submit">See More</button></a>
+                </div>
             </div>
         </div>
     </div>

@@ -11,6 +11,6 @@ export class NeowsService {
   }
 
   getNeows(): any {
-    return this.http.get('https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=DEMO_KEY');
+    return this.http.get('https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=DCn9Ur0hSKRPN1YS3U7fcmq7XAEu6nrSVQj48itJ');
   }
 }

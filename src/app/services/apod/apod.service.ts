@@ -11,6 +11,6 @@ export class ApodService {
   }
 
   getApod(): any {
-    return this.http.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY');
+    return this.http.get('https://api.nasa.gov/planetary/apod?api_key=DCn9Ur0hSKRPN1YS3U7fcmq7XAEu6nrSVQj48itJ');
   }
 }
